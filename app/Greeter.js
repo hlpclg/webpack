@@ -1,15 +1,18 @@
 /*
 * @Author: GuoSai
 * @Date:   2017-08-09 22:53:15
-* @Last Modified by:   GuoSai
-* @Last Modified time: 2017-08-09 22:56:11
+* @Last Modified by:   Peter
+* @Last Modified time: 2017-08-10 17:33:56
 */
 
 "use strict";
 
-// Greeter.js
+
+var config = require("./config.json");
+
 module.exports = function() {
     var greet = document.createElement("div");
-    greet.textContent = "Hi there and greetings!";
+    greet.className = "root";
+    greet.textContent = config.greetText;
     return greet;
 };

@@ -1,6 +1,7 @@
 /vendor
 /node_modules
 /bower_components
-/public/*.js
-/public/*.map
+/build
 .wakatime-project
+*.sublime-project
+*.sublime-workspace

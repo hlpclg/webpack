@@ -2,7 +2,7 @@
  * @Author: GuoSai
  * @Date:   2017-08-09 23:49:35
  * @Last Modified by:   Peter
- * @Last Modified time: 2017-08-10 17:38:44
+ * @Last Modified time: 2017-08-10 17:56:50
  */
 
 "use strict";
@@ -33,7 +33,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                // loader: ExtractTextPlugin.extract('style-loader', 'css-loader?modules!postcss-loader')
+                // loader: 'style-loader!css-loader?modules!postcss-loader'
                 use: ExtractTextPlugin.extract({
                     fallback: "style-loader",
                     use: "css-loader?module!postcss-loader"
